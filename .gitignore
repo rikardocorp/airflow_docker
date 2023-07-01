@@ -160,6 +160,6 @@ cython_debug/
 #.idea/
 
 py_env/
-
 logs/
-logs/*/*
+
+databases/*/

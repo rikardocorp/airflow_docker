@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  local_postgres:
+    image: 'postgres:13.2'
+    volumes:
+      - ./postgresql_container/postgres-data:/var/lib/postgresql/data
+    ports:
+      - 5433:5432
+
+    environment:
+      POSTGRES_USER: postgres # The PostgreSQL user
+      POSTGRES_PASSWORD: postgres # The PostgreSQL password 
+      POSTGRES_DB: postgres_db # The PostgreSQL default database 
+

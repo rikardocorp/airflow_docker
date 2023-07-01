@@ -53,7 +53,7 @@ with DAG(
     default_args=default_args,
     dag_id='our_dag_with_python_operator_v1.2',
     description='Python Operator - Airflow Variables & Dag Arguments',
-    start_date=datetime(2023, 6, 26, tzinfo=timezone),
+    start_date=datetime(2023, 6, 27, tzinfo=timezone),
     schedule_interval='@daily'
 ) as dag:
     

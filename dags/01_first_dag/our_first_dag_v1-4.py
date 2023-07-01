@@ -24,7 +24,8 @@ with DAG(
     default_args=default_args,
     description='DAG de prueba, obtenemos las variables de entorno',
     start_date=datetime(2023, 6, 25, tzinfo=timezone),
-    schedule_interval='0 8 * * *' #'@daily'
+    schedule_interval='0 8 * * *', #'@daily'
+    catchup=False
 ) as dag:
     task1 = BashOperator(
         task_id='first_task',

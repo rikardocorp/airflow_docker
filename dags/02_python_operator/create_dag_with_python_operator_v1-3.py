@@ -52,8 +52,8 @@ with DAG(
     default_args=default_args,
     dag_id='our_dag_with_python_operator_v1.3',
     description='Python Operator - Dag Params',
-    start_date=datetime(2023, 6, 26, tzinfo=timezone),
-    schedule_interval='@daily',
+    start_date=datetime(2023, 6, 28, tzinfo=timezone),
+    schedule_interval='@once',
     params={
         "first_name": Param("", type="string"),
         "last_name": Param("", type="string"),
