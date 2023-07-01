@@ -9,7 +9,7 @@ TZ = os.getenv('TZ')
 timezone = pytz.timezone(TZ)
 
 default_args = {
-    'owner': 'coder2j'
+    'owner': 'datapath'
 }
 
 with DAG(

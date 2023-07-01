@@ -10,7 +10,7 @@ timezone = pytz.timezone(TZ)
 # timezone = pytz.timezone('America/Lima')
 
 default_args = {
-    'owner': 'coder2j',
+    'owner': 'datapath',
     'retries': 5,
     'retry_delay': timedelta(minutes=2)
 }

@@ -11,7 +11,7 @@ TZ = os.getenv('TZ')
 timezone = pytz.timezone(TZ)
 
 default_args = {
-    'owner': 'coder2j',
+    'owner': 'datapath',
     # 'retries': 5,
     # 'retry_delay': timedelta(minutes=5)
 }
@@ -74,6 +74,5 @@ with DAG(
         python_callable=greet,
         op_kwargs={'some_dict': {'a': 1, 'b': 2}}
     )
-
 
     [taskA, taskB] >> taskC

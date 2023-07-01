@@ -14,7 +14,7 @@ VAR2 = Variable.get("AIRFLOW_VAR_2", deserialize_json=True)
 VAR2_STRING = VAR2.get('data').get('string')
 
 default_args = {
-    'owner': 'coder2j',
+    'owner': 'datapath',
     'retries': 5,
     'retry_delay': timedelta(minutes=2)
 }
